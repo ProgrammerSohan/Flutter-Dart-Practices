@@ -15,8 +15,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
          backgroundColor: Colors.deepPurple[100],
-      ),
+         body:  Center(
+           child: Container(
+            height: 300,
+            width: 300,
+            //color: Colors.deepPurple,
+            decoration: BoxDecoration(
+              color: Colors.deepPurple,
+              borderRadius:BorderRadius.circular(20),
+             
+              
+            ),
 
+            padding: EdgeInsets.all(25),
+            child: Text("Sohan Sujan"),
+            ),
+         ),
+
+    ),
     );
   }
 }
