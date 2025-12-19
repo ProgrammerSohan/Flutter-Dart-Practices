@@ -28,20 +28,18 @@ class MyApp extends StatelessWidget {
             ),
 
             padding: EdgeInsets.all(25),
-            child: Text(
-              "Sohan Sujan",
-               style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold,
+            child: Icon(
+                Icons.favorite,
+                color:Colors.white,
+                size: 64,
 
-               ),
+            ),
 
               ),
             ),
          ),
 
-    ),
     );
+    
   }
 }
