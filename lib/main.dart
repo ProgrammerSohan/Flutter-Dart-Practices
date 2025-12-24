@@ -21,12 +21,12 @@ class MyApp extends StatelessWidget {
          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
          //mainAxisAlignment: MainAxisAlignment.spaceAround,
         // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        //crossAxisAlignment: CrossAxisAlignment.center,
             children:[
                 //1st box
                 Container(
-                  height: 300,
-                  width: 300,
+                  height: 200,
+                  width: 200,
                   color: Colors.deepPurple,
 
                 ),
@@ -38,12 +38,14 @@ class MyApp extends StatelessWidget {
 
                 ),
                 //3rd box
-                  Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.deepPurple[200],
-
-                ),
+                  Expanded(
+                    child: Container(
+                                     // height: 200,
+                    width: 200,
+                    color: Colors.deepPurple[200],
+                    
+                                    ),
+                  ),
 
 
 
