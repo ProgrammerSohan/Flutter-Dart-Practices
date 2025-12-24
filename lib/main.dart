@@ -24,24 +24,29 @@ class MyApp extends StatelessWidget {
         //crossAxisAlignment: CrossAxisAlignment.center,
             children:[
                 //1st box
-                Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.deepPurple,
-
+                Expanded(
+                  child: Container(
+                    //height: 200,
+                   // width: 200,
+                    color: Colors.deepPurple,
+                  
+                  ),
                 ),
               //2nd box
-                Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.deepPurple[400],
-
+                Expanded(
+                  flex:3,
+                  child: Container(
+                    //height: 200,
+                    //width: 200,
+                    color: Colors.deepPurple[400],
+                  
+                  ),
                 ),
                 //3rd box
                   Expanded(
                     child: Container(
-                                     // height: 200,
-                    width: 200,
+                   // height: 200,
+                   // width: 200,
                     color: Colors.deepPurple[200],
                     
                                     ),
