@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-         backgroundColor: Colors.deepPurple[100],
+         //backgroundColor: Colors.deepPurple[100],
          appBar: AppBar(
             title: Text("My App Bar"),
             backgroundColor: Colors.deepPurple,
@@ -28,27 +28,34 @@ class MyApp extends StatelessWidget {
 
               ],
          ),
-         body:  Center(
-           child: Container(
-            height: 300,
-            width: 300,
-            //color: Colors.deepPurple,
-            decoration: BoxDecoration(
-              color: Colors.deepPurple,
-              borderRadius:BorderRadius.circular(20),
-             
-              
-            ),
+         body:  Column(
+            children:[
+                //1st box
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.deepPurple,
 
-            padding: EdgeInsets.all(25),
-            child: Icon(
-                Icons.favorite,
-                color:Colors.white,
-                size: 64,
+                ),
+              //2nd box
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.deepPurple[400],
 
-            ),
+                ),
+                //3rd box
+                  Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.deepPurple[200],
 
-              ),
+                ),
+
+
+
+            ],
+          
             ),
          ),
 
